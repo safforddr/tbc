@@ -1,0 +1,71 @@
+esptool.py v4.8.1
+Serial port /dev/ttyACM0
+Connecting...
+Detecting chip type... ESP32-S3
+Chip is ESP32-S3 in Secure Download Mode
+WARNING: Stub loader is not supported in Secure Download Mode, setting --no-stub
+Enabling default SPI flash mode...
+
+Security Information:
+=====================
+Flags: 0x000000f5 (0b11110101)
+Key Purposes: (9, 0, 0, 0, 0, 0, 12)
+  BLOCK_KEY0 - SECURE_BOOT_DIGEST0
+  BLOCK_KEY1 - USER/EMPTY
+  BLOCK_KEY2 - USER/EMPTY
+  BLOCK_KEY3 - USER/EMPTY
+  BLOCK_KEY4 - USER/EMPTY
+  BLOCK_KEY5 - USER/EMPTY
+Chip ID: 9
+API Version: 0
+Secure Boot: Enabled
+Secure Boot Key Revocation Status:
+
+	Secure Boot Key1 is Revoked
+
+	Secure Boot Key2 is Revoked
+
+Flash Encryption: Disabled
+SPI Boot Crypt Count (SPI_BOOT_CRYPT_CNT): 0x0
+JTAG: Permanently Disabled
+Hard resetting via RTS pin...
+
+
+I (65) boot: ESP-IDF v5.4-dev-3201-g46acfdce96 2nd stage bootloader
+I (65) boot: compile time Oct 27 2024 09:47:28
+I (66) boot: Multicore bootloader
+I (70) boot: chip revision: v0.2
+I (73) boot: efuse block revision: v1.3
+I (78) boot.esp32s3: Boot SPI Speed : 80MHz
+I (83) boot.esp32s3: SPI Mode       : DIO
+I (87) boot.esp32s3: SPI Flash Size : 16MB
+I (92) boot: Enabling RNG early entropy source...
+I (98) boot: Partition Table:
+I (101) boot: ## Label            Usage          Type ST Offset   Length
+I (109) boot:  0 nvs              WiFi data        01 02 0000b000 00006000
+I (116) boot:  1 phy_init         RF data          01 01 00011000 00001000
+I (124) boot:  2 factory          factory app      00 00 00020000 00177000
+I (131) boot: End of partition table
+I (135) esp_image: segment 0: paddr=00020020 vaddr=3c020020 size=0d33ch ( 54076) map
+I (154) esp_image: segment 1: paddr=0002d364 vaddr=3fc93900 size=02cb4h ( 11444) load
+I (157) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=1ce58h (118360) map
+I (182) esp_image: segment 3: paddr=0004ce80 vaddr=3fc965b4 size=00224h (   548) load
+I (182) esp_image: segment 4: paddr=0004d0ac vaddr=40374000 size=0f810h ( 63504) load
+I (201) esp_image: segment 5: paddr=0005c8c4 vaddr=600fe100 size=00018h (    24) load
+I (202) esp_image: segment 6: paddr=0005c8e4 vaddr=00000000 size=036ech ( 14060) 
+I (209) esp_image: Verifying image signature...
+I (212) secure_boot_v2: Verifying with RSA-PSS...
+I (220) secure_boot_v2: Signature verified successfully!
+I (230) boot: Loaded app from partition at offset 0x20000
+I (230) secure_boot_v2: enabling secure boot v2...
+I (235) secure_boot_v2: secure boot v2 is already enabled, continuing..
+I (242) boot: Disabling RNG early entropy source...
+I (259) cpu_start: Multicore app
+I (269) cpu_start: Pro cpu start user code
+I (269) cpu_start: cpu freq: 160000000 Hz
+I (269) app_init: Application information:
+I (272) app_init: Project name:     blink
+I (277) app_init: App version:      1
+I (281) app_init: Compile time:     Oct 27 2024 09:57:47
+I (287) app_init: ELF file SHA256:  8b49757e3...
+

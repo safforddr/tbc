@@ -7,7 +7,7 @@ delightful project of making a business card that runs Linux.
 (https://www.thirtythreeforty.net/posts/2019/12/my-business-card-runs-linux/)
 His goal was to demonstrate his hardware and Linux skills in a fun way.
 
-With the approaching 25th aniversary of the Trusted Computing Group, I thought
+With the recent 25th aniversary of the Trusted Computing Group, I thought
 it would be fun to do a similar card but with an added Trusted Platform Module (TPM)
 to demonstrate my hardware and trusted computing skills. Then some pagers started
 exploding, and the project redirected a bit to make it the smallest, cheapest, and
@@ -29,19 +29,23 @@ and so that you can enable secure boot with your own keys, as described in secti
 Additional details of the card with pretty pictures are provided in the TBC.odp set of slides in "docs".
     
 1. Verifying a TBC - a 5 Minute Quickstart Guide
-   If you have one of the dozen cards I gave out at the 25th member's meeting, here's
-   how to verify it. The instructions are tested on Fedora 40, although all tools
-   are fairly portable, and should run on most Linux systems.
+   If you have one of the dozen cards I gave out at the 25th member's meeting, or the
+   February 2025 Member's meeting here's how to verify it. The instructions are 
+   tested on Fedora 40, although all tools are fairly portable, and should run on 
+   most Linux systems.
    
-   Install paccor: Download
-       https://github.com/nsacyber/paccor/releases/download/v1.1.4r11/paccor-1.1.4-11.noarch.rpm
-   and 
-       sudo dnf install ./paccor-1.1.4-11.noarch.rpm
-       
-   Install openssl 
-       sudo dnf install openssl
+   Install TCG's fork of openssl in /usr/local:
+        git clone -b pcv2 https://github.com/TrustedComputingGroup/openssl.git
+        cd openssl
+	./Configure
+	make
+	sudo make install
+   To use this version of ssl make sure your path has /usr/local/bin first, and
+   add use /usr/local/lib64 with:
+	export LD_LIBRARY_PATH=/usr/local/lib64
+   (By default your path should be correct, and the tbc scripts modify the library path for you.)
 
-   Clone tbc repo
+   Clone the tbc repo
    	git clone https://github.com/safforddr/tbc.git
    	
    If you are not running Fedora 40, you will probably need to rebuild the tools in tbc.
@@ -54,11 +58,14 @@ Additional details of the card with pretty pictures are provided in the TBC.odp 
    Run a verification:
        cd tbc
        ./tbc_verify.sh
-   This will produce a very detailed report of the verification.
+   This will produce a summary report of the verification.
    Note that the first verification will not have a fresh challenge.
    Simply reset the card (with its "reset" button), and rerun tbc_verify.sh.
+   To get a detailed report run
+       ./tbc_verify.sh --verbose
+   This adds detailed dumps of the EK and Platform certs, the Quote, and Event Log.
    
-   View CARD.JPG in Files. This is an image of a known good card, and you
+   View CARD.JPG in Files. This is a photograph of a known good card, and you
    can compare your card to the image to check for any hardware tampering.
    
    Of course, then you should view my resume (safford.pdf).
@@ -118,7 +125,8 @@ Additional details of the card with pretty pictures are provided in the TBC.odp 
 3. Making your own TBC - Firmware
 
    Arduino 5 minute Quickstart
-       download appimage from https://downloads.arduino.cc/arduino-ide/arduino-ide_2.3.3_Linux_64bit.AppImage
+       download appimage from 
+           https://downloads.arduino.cc/arduino-ide/arduino-ide_2.3.3_Linux_64bit.AppImage
        chmod 755 arduino-ide_2.3.3_Linux_64bit.AppImage
        dnf install python3-pyserial
        ./arduino-ide_2.3.3_Linux_64bit.AppImage
@@ -130,6 +138,7 @@ Additional details of the card with pretty pictures are provided in the TBC.odp 
    The tbc/fw directory has esp-idf source files for the full card firmware.
    This requires installation of esp-idf, wolfSSL and wolfTPM.
    Once these are installed, copy the tbc/fw files to overwrite the originals in wolfTPM/IDE/Espressif.
+   The firmware sources are now tested with esp-idf version 5.4.
    
    see https://docs.espressif.com/projects/esp-idf/en/stable/esp32/gt-started/linux-macos-setup.html
    for detailed installation instructions for esp-idf 
@@ -141,15 +150,22 @@ Additional details of the card with pretty pictures are provided in the TBC.odp 
        idf.py menuconfig
        idf.py build
        idf.py -p /dev/ttyACM0 flash monitor
-            Note: to enable programming mode, press and hold "boot", press and release "Reset", release "boot"
-            Note: if secure boot is enabled, programming is only possible with through the TX/RX/GND pins.
+            Note: to enable programming mode, press and hold "boot", press and release 
+                "Reset", release "boot"
+            Note: if secure boot is enabled, programming is only possible with through the 
+                TX/RX/GND pins.
        
 4. Certifying your own TBC
 
+   Install paccor: Download
+       https://github.com/nsacyber/paccor/releases/download/v1.1.4r11/paccor-1.1.4-11.noarch.rpm
+   and 
+       sudo dnf install ./paccor-1.1.4-11.noarch.rpm
+       
    tbc_certify.sh board_number device (e.g. /dev/sda1)
    will certify a new board, creating and installing all the needed certificates.
-   Note that you will want to change the O and DN and filename defines in the scripts, in tools/gencert.c,
-   and in the json files for platform cert creation.
+   Note that you will want to change the O and DN and filename defines in the scripts, 
+   in tools/gencert.c, and in the json files for platform cert creation.
 
 5. Turning on Secure boot
 

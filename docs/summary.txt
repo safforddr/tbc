@@ -1,0 +1,44 @@
+Verification Report for Trusted Business Card at /run/media/dave/0021-03B5/ESP/
+
+Verifying Endorsement Key Certificate from Infineon
+    EK.CRT verification: /run/media/dave/0021-03B5/ESP/EK.CRT: OK
+
+Verifying that the Card's EK.DER matches the EK certificate
+    EK created on card matches EK from Infineon Certificate
+
+Verifying platform cert against EK and CA certs
+    Attribute certificate is valid.
+
+Verifying Attestation Key Certificate from Dave
+    AK.CRT verification: /run/media/dave/0021-03B5/ESP/AK.CRT: OK
+
+Verifying that the Card's AK.DER matches the AK certificate
+    AK created on card matches AK from AK Certificate
+
+Verifying vendor signature binding AK and EK:
+    Verified OK
+
+Verifying TPM_QUOTE
+    Decrypting quote with AK
+    Quoted data matches pcr10 data
+    Hash of quoted data matches decrypted signature
+
+Verifying RIM signatures
+    Verifying rim for CARD.JPG - Signature Verified Successfully
+    Verifying rim for SAFFORD.PDF - Signature Verified Successfully
+
+Verifying event log:
+    PCR 10 SHA256: A35FA055CDC1CE8A4208332686360ACE4B49333DD7E1F3656F66DE44CE02BD44  MATCHES
+
+Verifying that current challenge file was used.
+    Correct challenge file was used.
+    Writing a new random challenge. Reset the card for it to be measured.
+
+Verisying Secure Boot status - press boot-reset on the card
+    press enter when ready
+    Secure Boot: Disabled
+
+Verifying flash image:
+    Reading flash. This should take about one minute...
+    Files fw/flash.img and out.bin are identical
+

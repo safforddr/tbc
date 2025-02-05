@@ -82,11 +82,18 @@ cp $card_dir$akder  .
 # First pull public key from EK CERT
 openssl x509 -pubkey -noout -in EK.CRT -out EK_from_crt.PEM
 openssl pkey -in EK_from_crt.PEM  -pubin -outform der -out EK2.DER
-# compare it to EK.DER from card
-if cmp -s EK.DER EK2.DER; then
-	echo EK created on card matches EK from Infineon Certificate
+# if EK.CRT does not exist, simply use EK2.DER
+if ! [ -e "$ekder" ]; then
+    echo "EK.DER does not exist. Copying EK2.DER to $card_dir$ekder"
+    cp EK2.DER $card_dir$ekder
+    cp EK2.DER $ekder
 else
+    # compare it to EK.DER from card
+    if cmp -s $ekder EK2.DER; then
+	echo EK created on card matches EK from Infineon Certificate
+    else
 	echo EK created on card does not match EK from Infineon Certificate
+    fi
 fi
 
 # If needed, create a sample signing key pair
@@ -157,6 +164,10 @@ openssl rsa -pubin -inform=der -in AK.DER -outform pem -out AK.PEM
 $certgen_bin > AK_CERT.PEM
 openssl x509 -inform pem -in AK_CERT.PEM -outform der -out AK.CRT
 
+# sign {AK.DER | EK.DER} so owner need only prove AK
+cat AK.DER EK.DER > file.bin
+openssl dgst -sha256 -sign keys/private.pem -out SIG.BIN file.bin
+
 # create rim from files in file_dir
 for F in `ls ./files`; do
     echo $F
@@ -165,6 +176,7 @@ for F in `ls ./files`; do
 done
 
 # copy files to card
+cp SIG.BIN $card_dir
 cp $pccert $card_dir
 cp $akcert $card_dir
 cp $file_dir* $card_dir
@@ -180,4 +192,4 @@ eksave="$out_dir""card_""$card_ser""_""$ekder"
 cp $ekder $eksave
 
 #cleanup
-rm -f AK.CRT AK.DER AK.PEM AK_CERT.PEM EK.CRT PLATFORM.CRT EK_from_crt.PEM EK2.DER
+rm -f AK.CRT AK.DER AK.PEM AK_CERT.PEM EK.CRT EK.DER PLATFORM.CRT EK_from_crt.PEM EK2.DER file.bin SIG.BIN

@@ -1,0 +1,330 @@
+Verification Report for Trusted Business Card at /run/media/dave/DATA/ESP/
+
+Verifying Endorsement Key Certificate from Infineon
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 556438248 (0x212a92e8)
+        Signature Algorithm: sha384WithRSAEncryption
+        Issuer: C=DE, O=Infineon Technologies AG, OU=OPTIGA(TM), CN=Infineon OPTIGA(TM) TPM 2.0 RSA CA 065
+        Validity
+            Not Before: Jun 15 20:54:32 2023 GMT
+            Not After : Jun 15 20:54:32 2038 GMT
+        Subject: 
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:d6:69:c5:bc:a2:45:73:1d:29:07:f6:48:6a:15:
+                    7f:6b:7a:a1:29:72:50:d2:84:5f:80:a4:59:28:ac:
+                    d1:f0:d7:91:8a:76:ed:fb:69:a9:ca:29:8c:63:2d:
+                    51:48:ec:8c:63:b8:7d:cb:2a:e9:01:03:b8:0e:48:
+                    2d:9f:14:73:85:ca:d9:ca:0d:1b:20:8a:d7:dd:4c:
+                    03:de:8f:05:40:76:c8:d8:b2:33:7f:b5:0f:a3:a5:
+                    5d:8b:74:8f:00:bc:30:50:8d:d3:1b:c2:25:fc:f3:
+                    7d:e2:45:90:73:bb:b0:97:78:c3:ad:5d:9d:54:c8:
+                    3c:b8:d4:35:23:fe:7e:c5:84:db:42:13:1b:48:4e:
+                    d5:22:93:9f:8a:6d:62:86:87:80:6f:4e:4a:01:14:
+                    e0:d1:4b:df:8b:06:ec:59:66:e6:9a:2c:92:c7:8e:
+                    a9:a5:8c:d5:11:9d:70:7e:33:f2:4d:71:0c:9c:26:
+                    fb:f5:c4:60:b6:20:f5:c7:79:03:7d:29:31:1e:92:
+                    0a:0a:a9:8f:c8:b0:27:3a:f1:83:e5:7e:bb:b4:29:
+                    bd:11:da:67:a1:c7:68:ca:cd:5e:14:56:58:32:b7:
+                    8a:f1:68:78:c7:e0:c6:75:67:c7:2c:03:0d:84:91:
+                    82:d3:de:81:0e:61:c6:ec:e8:2e:72:f4:d9:ea:30:
+                    67:6d
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            Authority Information Access: 
+                CA Issuers - URI:https://pki.infineon.com/OptigaRsaMfrCA065/OptigaRsaMfrCA065.crt
+            X509v3 Key Usage: critical
+                Key Encipherment
+            X509v3 Subject Alternative Name: critical
+                DirName:/2.23.133.2.1=id:49465800/2.23.133.2.2=SLB 9672 TPM2.0/2.23.133.2.3=id:100D
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:https://pki.infineon.com/OptigaRsaMfrCA065/OptigaRsaMfrCA065.crl
+            X509v3 Certificate Policies: 
+                Policy: 1.2.276.0.68.1.20.1
+            X509v3 Authority Key Identifier: 
+                C9:D9:E6:46:67:26:A8:97:34:8B:22:57:21:DD:64:7A:21:C9:47:9C
+            X509v3 Extended Key Usage: 
+                2.23.133.8.1
+            X509v3 Subject Directory Attributes: 
+                0.0...g....1.0...2.0.......
+    Signature Algorithm: sha384WithRSAEncryption
+    Signature Value:
+        83:05:a9:c1:fb:96:c6:26:7c:4f:12:2d:27:a6:f2:a0:db:0f:
+        b5:19:b5:db:00:3f:cd:c3:97:f6:01:c2:36:56:a9:71:b6:f2:
+        e6:14:bf:30:ec:63:5e:72:79:58:b9:1d:24:e5:76:bc:d8:44:
+        50:78:bc:1d:51:10:e6:a8:47:7a:ca:ce:2d:ff:ab:6b:51:40:
+        24:21:5b:1f:01:6b:82:aa:01:0e:1e:b3:5e:4f:9e:e2:49:0f:
+        50:f2:57:b1:1c:8c:67:ea:e0:5b:a4:7a:b7:4a:58:95:2e:86:
+        5b:d0:5d:8e:83:80:cf:a9:40:ce:13:f1:88:13:03:61:9a:88:
+        4b:1a:bb:45:14:63:c3:49:22:09:c1:53:36:f7:f3:ca:81:d3:
+        08:b8:e7:a3:08:60:7c:d3:ec:27:8e:df:ad:f6:0f:eb:ff:2c:
+        1c:b1:1e:07:30:b5:4b:56:b0:6e:2a:c3:d3:12:f6:c9:e5:9d:
+        49:3e:80:09:36:1e:e2:3a:e1:b9:98:1e:30:83:ac:ee:f6:0a:
+        27:43:44:bc:27:ac:87:ed:46:cd:c3:f7:ea:8a:db:a2:3d:fc:
+        23:c4:b2:e5:a9:db:05:86:3b:34:23:c3:10:2f:26:9f:d8:5c:
+        18:a2:ec:eb:14:1b:28:c9:f3:60:2f:30:bc:b1:25:9d:b1:fb:
+        6a:8d:9b:4c:f7:37:ed:2f:17:b0:71:60:ec:9e:cc:d3:76:0f:
+        89:b5:6b:6f:46:4a:13:13:3f:0d:6c:db:09:d7:30:75:66:7e:
+        96:04:f8:31:97:c4:b7:76:85:74:3f:f8:df:89:24:21:13:c1:
+        1a:1b:46:a6:e0:2d:fa:29:22:ec:37:63:8f:85:22:3e:b1:54:
+        62:d3:e9:1e:4b:f4:5b:82:ec:1f:47:35:39:a1:68:9a:23:cc:
+        15:c1:60:fb:d6:af:f6:0b:44:0e:86:02:ca:e0:d8:58:00:c6:
+        f3:9c:75:d0:fd:75:88:8c:33:55:cd:05:e2:fc:f0:a2:b9:77:
+        89:6e:97:53:ff:cf:24:8c:87:73:a5:dd:85:23:6e:8e:58:a1:
+        15:92:ae:55:07:d3:14:9d:e2:89:4b:0f:76:00:3b:67:41:ae:
+        89:61:c2:21:f4:74:f4:dd:89:a0:7d:d4:4d:56:72:20:9b:cd:
+        f3:26:79:87:39:8f:75:c6:4d:e4:50:ed:b0:9f:2c:31:02:f7:
+        d5:cd:40:a4:a7:2a:60:8b:f1:fd:04:4d:32:e2:ee:ab:da:c9:
+        0e:6c:ae:cf:07:dd:4b:98:7d:88:b1:c1:0d:91:77:44:d3:32:
+        f9:43:9d:ef:43:37:62:ca:51:5e:23:9e:47:89:61:35:06:05:
+        c4:2b:b3:ed:7a:46:71:f3
+
+    EK.CRT verification: /run/media/dave/DATA/ESP/EK.CRT: OK
+
+Verifying that the Card's EK.DER matches the EK certificate
+    EK created on card matches EK from Infineon Certificate
+
+Verifying platform cert against EK and CA certs
+    Attribute certificate is valid.
+    Attribute Certificate:
+    Data:
+        Version: 2 (0x1)
+        Serial Number: 1
+        Holder:
+            Issuer: C=DE, O=Infineon Technologies AG, OU=OPTIGA(TM), CN=Infineon OPTIGA(TM) TPM 2.0 RSA CA 065
+            Serial: 556438248
+        Issuer: O=safford_ca.com
+        Validity
+            Not Before: Jan  1 05:00:00 2018 GMT
+            Not After : Jan  1 05:00:00 2028 GMT
+        Attributes:
+            TBB Security Assertions:
+                Version: 1
+                Plus: FALSE
+
+            TPM Platform Specification:
+                1.3.22 : 00 00 00 01 
+            TCG Credential Type:
+                Credential Type: 2.23.133.8.2 (Platform Attribute Certificate)
+            Platform Configuration Version 2:
+                Component Identifiers:
+                    Component Identifier:
+                        Component Class:
+                            Component Class Registry: 2.23.133.18.3.1 (Trusted Computed Group Registry)
+                            Component Class Registry: 00 02 00 01 
+                        Component Manufacturer: Espressif
+                        Component Model: esp32s3-wroom
+                        Component Serial: XXESP_SER##
+                        Component Revision: 1.0
+                        Field Replaceable: TRUE
+
+                    Component Identifier:
+                        Component Class:
+                            Component Class Registry: 2.23.133.18.3.1 (Trusted Computed Group Registry)
+                            Component Class Registry: 00 02 00 01 
+                        Component Manufacturer: Infineon
+                        Component Model: SLB9672
+                        Component Serial: XXTPM_SER##
+                        Component Revision: 1.0
+                        Field Replaceable: TRUE
+
+                Properties:
+                    Property:
+                        Property Name: BSP
+                        Property Value: esp-idf
+                    Property:
+                        Property Name: OS
+                        Property Value: FreeRTOS
+                    Property:
+                        Property Name: LIB
+                        Property Value: WolfTPM
+
+            TCG Credential Specification:
+    0:d=0  hl=2 l=   9 cons: SEQUENCE          
+    2:d=1  hl=2 l=   1 prim:  INTEGER           :01
+    5:d=1  hl=2 l=   1 prim:  INTEGER           :01
+    8:d=1  hl=2 l=   1 prim:  INTEGER           :11
+
+        Extensions:
+            X509v3 Authority Key Identifier: 
+                    keyid:8E:86:31:E3:90:43:8B:1F:2D:D8:7D:9E:D1:36:D8:23:41:F9:40:D3
+                    DirName:/O=safford_ca.com
+                    serial:4F:5A:7E:B1:C7:30:F8:C8:A7:1B:FD:C0:FC:F5:FE:BC:26:BF:06:2B
+            X509v3 Certificate Policies: 
+                    Policy: 1.2.3
+                      User Notice:
+                        Explicit Text: TCG Trusted Platform Endorsement
+            X509v3 Subject Alternative Name: 
+                    DirName:/tcg-at-platformModel=Trusted Buusiness Card/tcg-at-platformManufacturerStr=David Safford/tcg-at-platformVersion=1.3/tcg-at-platformSerial=25
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        2b:3d:49:28:76:c3:38:5f:79:2f:ae:b6:af:69:95:c8:a4:db:
+        b9:13:90:58:29:b2:2e:ef:f2:b5:9f:d5:e7:10:47:a8:6b:ed:
+        47:c7:94:a5:df:41:f2:1f:23:6c:be:51:c4:08:a4:8c:10:63:
+        15:ca:dd:13:fd:fc:85:5f:f5:f3:9b:1f:fb:29:ea:3f:05:fe:
+        a6:46:3f:e9:3d:8b:1b:56:b4:74:22:80:49:0b:1e:41:08:b5:
+        14:10:a3:08:dd:1b:28:d3:05:5b:10:9d:f1:a8:b6:42:dc:37:
+        b5:71:57:17:1d:c4:4a:03:10:be:5f:64:0a:8e:2e:43:f5:36:
+        45:67:56:8c:f4:6c:40:65:84:be:9e:27:e7:46:4e:31:0e:ab:
+        9d:70:b5:75:4d:b0:33:39:1a:d6:c3:6b:61:d7:7f:f1:9e:1a:
+        7a:da:76:8e:e1:b5:33:06:46:bc:e7:d8:1f:ca:55:29:23:ab:
+        97:16:26:b5:81:9c:59:2e:ed:eb:c9:fd:e3:f4:cd:6d:00:2c:
+        65:b6:b1:10:81:d2:e7:1f:b2:0e:25:f8:b6:f8:bf:92:bf:d6:
+        a7:aa:9d:96:53:f6:09:56:6f:52:64:5a:b7:35:55:f2:9b:e9:
+        55:4d:f1:87:56:a3:13:2d:16:40:0e:e6:79:45:44:12:42:82:
+        34:42:5e:ee
+
+Verifying Attestation Key Certificate from Dave
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 0 (0x0)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: O=safford_ca.com
+        Validity
+            Not Before: Feb  1 19:29:50 2025 GMT
+            Not After : Feb  1 19:29:50 2026 GMT
+        Subject: CN=AK
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:d9:ab:ce:d8:17:f3:43:05:9e:53:9c:b4:36:58:
+                    de:42:4a:10:77:40:61:2f:a3:45:95:21:1e:f2:f7:
+                    1e:72:fe:45:c3:7b:ec:f0:c9:c7:14:a7:de:44:36:
+                    a1:6e:6c:25:e6:f3:42:28:d4:57:56:dd:22:ef:1b:
+                    77:90:c3:0b:3a:1c:19:4e:a8:14:0d:0b:69:62:b7:
+                    ea:b7:d3:11:ba:aa:c4:d5:ad:70:a5:87:61:af:64:
+                    68:73:eb:2c:a0:1e:19:72:2a:22:72:d4:50:ed:9f:
+                    85:42:a4:73:0d:23:3e:fa:4a:60:f1:4a:67:6d:8c:
+                    0f:01:07:fa:5d:e8:e5:4d:7a:42:4a:e7:e1:3b:da:
+                    d8:50:6b:54:4e:b7:6a:29:94:1e:11:23:47:d0:9d:
+                    c2:eb:fa:62:1c:c1:19:21:39:98:86:ad:30:16:b2:
+                    cf:3e:f1:d7:8b:a3:21:fd:5e:4f:87:53:df:d3:4f:
+                    be:33:84:69:ff:80:63:8c:d3:ba:7e:a7:5b:b7:28:
+                    ac:26:41:59:c4:da:68:d7:2f:15:1e:88:cc:85:b7:
+                    43:83:a3:5d:a7:fd:bd:3b:6d:d5:66:ba:66:40:8c:
+                    f8:a8:7f:b9:fd:3a:fb:e3:c0:f0:c6:3f:7f:39:2e:
+                    56:ac:c2:c2:43:30:0e:cc:11:0e:4d:46:66:b2:94:
+                    e4:99
+                Exponent: 65537 (0x10001)
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        53:69:ba:fe:53:c2:36:1a:fc:d9:39:83:a5:ae:2a:d9:69:6e:
+        fd:8e:56:54:2c:26:ea:f1:46:7c:51:1e:ac:36:b9:05:52:f9:
+        08:5f:51:d3:29:c6:23:67:27:93:13:ff:6b:7e:ae:98:a0:b0:
+        60:7e:fe:6d:d4:47:b8:91:9d:39:33:53:de:ac:c6:3b:16:8d:
+        9c:dc:14:8b:cc:16:f0:9b:e8:86:97:ee:6b:71:fa:87:24:1f:
+        b1:1b:29:cb:29:f4:14:aa:a7:7a:cb:25:fa:e9:20:71:79:48:
+        1c:8e:12:db:12:bc:6c:e7:61:a6:86:f7:a1:52:63:35:1d:da:
+        8f:15:96:b3:6d:a0:ab:78:d5:49:90:46:e4:8c:dc:78:66:17:
+        cd:d5:12:6b:c9:d7:1b:31:13:e1:dc:7f:b1:20:d1:af:c1:a9:
+        e1:bc:5c:73:43:c9:15:7c:b4:f2:ec:25:c1:5d:56:aa:95:e6:
+        a2:31:85:e1:02:c0:d2:11:1f:ca:31:ef:1c:bd:6b:5b:be:37:
+        ff:c5:3e:43:b3:a2:19:e4:1c:dd:ef:80:81:6d:04:24:9b:3f:
+        15:b4:19:e7:a0:e0:85:b7:5c:b3:e6:5f:bd:2c:9d:8d:59:cb:
+        10:2d:fd:71:45:b9:56:0e:98:81:4f:04:a6:ba:4a:ad:05:5a:
+        15:1a:d6:cb
+    AK.CRT verification: /run/media/dave/DATA/ESP/AK.CRT: OK
+
+Verifying that the Card's AK.DER matches the AK certificate
+    AK created on card matches AK from AK Certificate
+
+Verifying vendor signature binding AK and EK:
+    Verified OK
+
+Verifying TPM_QUOTE
+    Decrypting quote with AK
+Decrypted data:
+00000000  30 31 30 0d 06 09 60 86  48 01 65 03 04 02 01 05  |010...`.H.e.....|
+00000010  00 04 20 3b 2f 56 62 c9  c3 a8 93 6c a8 2c 98 bc  |.. ;/Vb....l.,..|
+00000020  c2 59 86 82 31 45 f9 62  31 0b ab 2f 32 c1 5b 0f  |.Y..1E.b1../2.[.|
+00000030  5f f7 da                                          |_..|
+00000033
+sha256 of QUOTE.DAT
+00000000  3b 2f 56 62 c9 c3 a8 93  6c a8 2c 98 bc c2 59 86  |;/Vb....l.,...Y.|
+00000010  82 31 45 f9 62 31 0b ab  2f 32 c1 5b 0f 5f f7 da  |.1E.b1../2.[._..|
+00000020
+
+QUOTE.DAT
+00000000  ff 54 43 47 80 18 00 22  00 0b 11 38 c7 79 fb cb  |.TCG..."...8.y..|
+00000010  fe 37 dc a7 05 29 d2 26  37 8d 70 f1 6e 0a d4 88  |.7...).&7.p.n...|
+00000020  97 39 04 dc 93 89 d2 f1  43 07 00 00 00 00 00 00  |.9......C.......|
+00000030  00 26 5f ee 39 2c 56 a7  80 71 0f ed 01 0c 6b b0  |.&_.9,V..q....k.|
+00000040  f0 7a 56 bf 0b 00 00 00  01 00 0b 03 00 04 00 00  |.zV.............|
+00000050  20 c1 7b 6d d3 8c cf 27  24 38 66 c6 8a a9 95 01  | .{m...'$8f.....|
+00000060  cc 21 1c ea 76 f3 0f 21  34 42 ac 71 4e 0a 7e b4  |.!..v..!4B.qN.~.|
+00000070  2c                                                |,|
+00000071
+
+hashed PCR.BIN
+00000000  c1 7b 6d d3 8c cf 27 24  38 66 c6 8a a9 95 01 cc  |.{m...'$8f......|
+00000010  21 1c ea 76 f3 0f 21 34  42 ac 71 4e 0a 7e b4 2c  |!..v..!4B.qN.~.,|
+00000020
+
+PCR.BIN
+00000000  e1 a3 9e fe 52 9a a0 fa  cb f3 45 6f 75 eb 61 c7  |....R.....Eou.a.|
+00000010  78 29 6d 8b f5 f8 c0 d6  69 94 7d 7e 9e 38 ea 2b  |x)m.....i.}~.8.+|
+00000020
+
+    Quoted data matches pcr10 data
+    Hash of quoted data matches decrypted signature
+
+Verifying RIM signatures
+    Verifying rim for CARD.JPG - Signature Verified Successfully
+    Verifying rim for SAFFORD.PDF - Signature Verified Successfully
+
+Verifying event log:
+    
+Verifying Event Log Against PCRs
+
+PCR 00 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+PCR 01 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+PCR 02 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+PCR 03 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+PCR 04 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+PCR 05 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+PCR 06 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+PCR 07 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+PCR 08 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+PCR 09 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+PCR 10 SHA256: E1A39EFE529AA0FACBF3456F75EB61C778296D8BF5F8C0D669947D7E9E38EA2B  MATCHES
+PCR 11 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+PCR 12 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+PCR 13 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+PCR 14 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+PCR 15 SHA256: 0000000000000000000000000000000000000000000000000000000000000000 
+
+Summarizing all events
+
+SEQ 0 PCR 10 CEL_CONTENT_IMA_TLV 
+    Filename /data/esp/safford.pdf 
+    Filehash: D0471A5C5E9F00A0A2E761924C6AFF6EB966E8A468822E9016D0DED8751E18F2 
+    Entire Content TLV Verified by digest
+    File Hash Verified by signed RIM 
+
+SEQ 1 PCR 10 CEL_CONTENT_IMA_TLV 
+    Filename /data/esp/card.jpg 
+    Filehash: 4E13EFCA44B7AF6DC7366425FC551BB4B046F04585ECE5C134CB7997438FFCD6 
+    Entire Content TLV Verified by digest
+    File Hash Verified by signed RIM 
+
+SEQ 2 PCR 10 CEL_CONTENT_IMA_TLV 
+    Filename /data/esp/chall.bin 
+    Filehash: B1CCB58EA5A40D2D9F15C73753283A51F9490D5D902A49826FD66D92A64AC2B0 
+    Entire Content TLV Verified by digest
+
+
+Verifying that current challenge file was used.
+    Correct challenge file was used.
+
+Writing a new random challenge. Reset the card for it to be measured.
+
+Verifying flash image - press boot-reset on the card
