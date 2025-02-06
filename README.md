@@ -1,5 +1,6 @@
 ## **Trusted Business Card (TBC) README**
 <img src="docs/card_2_blur.jpg" width="400" />
+
 #### What is TBC?
 
 The TBC project started as a fun response to George Hilliard's delightful project of making a business card that runs Linux.
