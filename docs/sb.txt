@@ -1,3 +1,17 @@
+Verifying that Secure Boot is enabled:
+
+esptool and idf.py monitor interact with the ESP32 ROM (first
+stage bootloader), and cannot be compromised by a malicious firmware 
+(second stage bootloader or application) load.
+
+Unfortunately, once secure boot is enabled, the ROM does not allow
+reading efuses, or reading or writing flash, so verification of 
+the secure boot keys and signatures is impossible.
+
+What you can verify:
+
+esptool --port /dev/ttyACM0 get_security_info:
+
 esptool.py v4.8.1
 Serial port /dev/ttyACM0
 Connecting...
@@ -30,6 +44,7 @@ SPI Boot Crypt Count (SPI_BOOT_CRYPT_CNT): 0x0
 JTAG: Permanently Disabled
 Hard resetting via RTS pin...
 
+idf.py -p /dev/ttyACM0  monitor:
 
 I (65) boot: ESP-IDF v5.4-dev-3201-g46acfdce96 2nd stage bootloader
 I (65) boot: compile time Oct 27 2024 09:47:28

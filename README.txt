@@ -140,14 +140,17 @@ Additional details of the card with pretty pictures are provided in the TBC.odp 
    Once these are installed, copy the tbc/fw files to overwrite the originals in wolfTPM/IDE/Espressif.
    The firmware sources are now tested with esp-idf version 5.4.
    
-   see https://docs.espressif.com/projects/esp-idf/en/stable/esp32/gt-started/linux-macos-setup.html
-   for detailed installation instructions for esp-idf 
+   See https://docs.espressif.com/projects/esp-idf/en/stable/esp32/gt-started/linux-macos-setup.html
+   for detailed installation instructions for esp-idf. Note that the current wolfTPM does not have a 
+   HAL driver for the SLB9672 (SPI) TPM. One is provided in this repo's fw/HAL/tpm_io_espressif.c
+   file which replaces the same named file in wolfTPM's "hal" directory.
    
    TYpical command sequence
        . ~/esp/esp-idf/export.sh
        cd ~/esp/wolfTPM/IDE/Espressif
        idf.py set-target esp32s3   
        idf.py menuconfig
+       	   (enable tinyusb with MSC and CDC, and enable custom partition - "partitions.csv")
        idf.py build
        idf.py -p /dev/ttyACM0 flash monitor
             Note: to enable programming mode, press and hold "boot", press and release 
