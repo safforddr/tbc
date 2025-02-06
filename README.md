@@ -1,5 +1,5 @@
 ## **Trusted Business Card (TBC) README**
-
+<img src="docs/card_2_blur.jpg" width="400" />
 #### What is TBC?
 
 The TBC project started as a fun response to George Hilliard's delightful project of making a business card that runs Linux.
@@ -13,11 +13,12 @@ most simple demonstration of how trusted computing can help defeat many supply c
 So it's both Silly, and Not So Silly.
 
 The card demonstrates several security features including:
-    - secure boot*.
-    - platform authenticity based on endorsement and platform certificates.
-    - measuremant and attestation of contents with a certified attestation key.
-    - a digitally signed photo image of the original board for visual verification.
-    - and, of course, my digitally signed resume.
+
+- secure boot*.  
+- platform authenticity based on endorsement and platform certificates.   
+- measuremant and attestation of contents with a certified attestation key.  
+- a digitally signed photo image of the original board for visual verification.  
+- and, of course, my digitally signed resume.
 
 *secure boot is not turned on initially, so you can play with the card, and so that you can enable secure boot with your own keys, as described in section 5, below.
 
