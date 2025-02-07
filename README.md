@@ -32,6 +32,11 @@ February 2025 Member's meeting here's how to verify it. The instructions are
 tested on Fedora 40, although all tools are fairly portable, and should run on 
 most Linux systems.
 
+Install some prerequisites:
+
+     dnf install perl-FindBin perl-IPC-cmd esptool
+     dnf group install c-development
+     
 Install TCG's fork of openssl in /usr/local:
 
      git clone -b pcv2 https://github.com/TrustedComputingGroup/openssl.git
