@@ -70,8 +70,12 @@ Run a verification:
     cd tbc
     ./tbc_verify.sh
 
-This will produce a summary report of the verification.
-Note that the first verification will not have a fresh challenge.
+This will produce a summary report of the verification. Note that 
+at one point the verification script will ask you to "press boot-reset on the card".
+This means press and hold the "boot" button, momentarily press the "reset" button, then
+release the boot button. This places the ESP32 in ROM monitor mode, so that the
+verification script can use esptool to verify secure boot or the firmware image.
+Also the first verification will not have a fresh challenge.
 Simply reset the card (with its "reset" button), and rerun tbc_verify.sh.
 To get a detailed report run
 
