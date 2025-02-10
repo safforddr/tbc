@@ -175,7 +175,9 @@ in tools/gencert.c, and in the json files for platform cert creation.
 
 #### **Turning on Secure boot**
 
-First, you have to have the esp-idf development environment installed as in 3 above.
+First, you have to have the esp-idf development environment installed as in 
+"Making your own TBC-Firmware" above. Be sure that you can make and flash a working
+image before turning on secure boot.
 
 In general, follow "How To Enable Secure Boot V2" in "ESP32-S3 ESP-IDF Programming Guide".
 
